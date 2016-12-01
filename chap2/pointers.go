@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	i, j := 42, 2701
+	i, j := 42, 1000
 
 	p := &i         // point to i
 	fmt.Println(*p) // read i through the pointer
