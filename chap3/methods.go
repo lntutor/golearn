@@ -1,3 +1,5 @@
+package main
+
 // Methods
 // Go does not have classes. However, you can define methods on types.
 //
@@ -6,8 +8,6 @@
 // The receiver appears in its own argument list between the func keyword and the method name.
 //
 // In this example, the Abs method has a receiver of type Vertex named v.
-
-package main
 
 import (
 	"fmt"
