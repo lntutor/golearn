@@ -14,7 +14,8 @@ func rotate13(s byte) byte {
 	b := rune(s)
 	if (b >= 'a' && b <= 'm') || (b >= 'A' && b <= 'M') {
 		s += 13
-	} else {
+	}
+	if (b >= 'n' && b <= 'z') || (b >= 'N' && b <= 'Z') {
 		s -= 13
 	}
 	return s
@@ -25,7 +26,7 @@ func (rot13 rot13Reader) Read(data []byte) (readed int, err error) {
 	for i := 0; i < readed; i++ {
 		data[i] = rotate13(data[i])
 	}
-	return
+	return readed, err
 }
 
 func main() {
